@@ -331,17 +331,7 @@ onMounted(() => {
           </div>
 
           <!-- Newsletter Mini -->
-          <div class="bg-[#007BFE] dark:bg-[#1dbf73] p-10 rounded-3xl text-white dark:text-black">
-            <h3 class="text-2xl font-black uppercase mb-4 leading-none">Subscribe</h3>
-            <p class="text-white/80 dark:text-black/70 text-xs mb-8 font-medium">
-              Join 5,000+ others getting weekly tech insights.
-            </p>
-            <button
-              class="w-full py-4 bg-white dark:bg-black text-[#007BFE] dark:text-[#1dbf73] font-black uppercase tracking-widest text-xs rounded-xl shadow-xl hover:scale-105 transition-all"
-            >
-              Sign Up Now
-            </button>
-          </div>
+          
         </div>
       </div>
 

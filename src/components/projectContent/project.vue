@@ -30,7 +30,8 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20">
         <div 
           v-for="(project, index) in filteredProjects" 
-          :key="index"
+          :key="project.id"
+          @click="goToProject(project.id)"
           class="group cursor-pointer animate-in fade-in zoom-in-95 duration-700"
           :style="{ 'animation-delay': `${index * 150}ms` }"
         >
@@ -39,13 +40,13 @@
              <div class="flex flex-col gap-1">
                 <div class="flex items-center gap-2">
                    <span class="w-1.5 h-1.5 rounded-full bg-[#1dbf73]"></span>
-                   <span class="text-[10px] font-black tracking-widest text-[#1dbf73] uppercase">{{ project.category }}</span>
+                   <span class="text-[10px] font-black tracking-widest text-[#1dbf73] uppercase">{{ project.tags[0] }}</span>
                 </div>
                 <h3 class="text-2xl lg:text-3xl font-black tracking-tight group-hover:text-[#1dbf73] transition-colors duration-300">
                   {{ project.title }}
                 </h3>
              </div>
-             <span class="text-xs font-black text-gray-500 uppercase tracking-widest pb-1">{{ project.year }}</span>
+             <span class="text-xs font-black text-gray-500 uppercase tracking-widest pb-1">{{ project.date }}</span>
           </div>
           
           <!-- Image Container -->
@@ -80,45 +81,27 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue'
+import { useRouter } from 'vue-router'
+import { projects } from '@/data/projects'
 
+const router = useRouter()
 const activeCategory = ref('All')
-const categories = ['All', 'Visual Design', 'Development', 'Branding']
-
-const projects = [
-  { 
-    title: 'Carbon Platform', 
-    year: '2023', 
-    category: 'Development', 
-    description: 'A high-performance analytics dashboard for carbon credit trading and environmental reporting.',
-    image: '/projects/project_mockup_laptop_1_1775382992336.png' 
-  },
-  { 
-    title: 'Pixel Perfect UI', 
-    year: '2023', 
-    category: 'Visual Design', 
-    description: 'Crafting minimalist, component-based design systems for large-scale enterprise applications.',
-    image: '/projects/project_mockup_laptop_2_1775383124067.png' 
-  },
-  { 
-    title: 'Vibrant Displays', 
-    year: '2023', 
-    category: 'Visual Design', 
-    description: 'Immersive mobile experience focusing on fluid motion and vibrant color interaction.',
-    image: '/projects/project_mockup_phone_1_1775383145132.png' 
-  },
-  { 
-    title: 'H&S Design Studio', 
-    year: '2023', 
-    category: 'Branding', 
-    description: 'Elegant brand identity design for a boutique architectural and design firm.',
-    image: '/projects/project_mockup_card_1_1775383266734.png' 
-  }
-]
+const categories = ['All', 'Development', 'Dashboard', 'Full-Stack']
 
 const filteredProjects = computed(() => {
   if (activeCategory.value === 'All') return projects
-  return projects.filter(p => p.category === activeCategory.value)
+  return projects.filter(p => {
+    const tags = p.tags.map(t => t.toLowerCase())
+    if (activeCategory.value === 'Development') return tags.includes('vue.js') || tags.includes('react')
+    if (activeCategory.value === 'Dashboard') return tags.includes('dashboard') || tags.includes('saas')
+    if (activeCategory.value === 'Full-Stack') return tags.includes('full-stack')
+    return true
+  })
 })
+
+const goToProject = (id: number) => {
+  router.push(`/project/${id}`)
+}
 </script>
 
 <style scoped>

@@ -13,9 +13,8 @@ const scrollToTop = () => {
 const navLinks = [
   { name: 'Home', path: '/' },
   { name: 'About', path: '/about' },
-  { name: 'Projects', path: '/' },
-  { name: 'Services', path: '/' },
-  { name: 'Contact', path: '/' }
+  { name: 'Projects', path: '/projects' },
+  { name: 'Contact', path: '/contact' }
 ]
 </script>
 
@@ -54,9 +53,9 @@ const navLinks = [
       <!-- Bottom Nav & Copyright -->
       <div class="mt-20 flex flex-col items-center gap-10">
         <nav class="flex flex-wrap justify-center gap-x-12 gap-y-6">
-          <a v-for="link in navLinks" :key="link.name" href="#" class="text-sm font-black uppercase tracking-widest text-gray-500 dark:text-gray-400 hover:text-[#007BFE] dark:hover:text-[#1dbf73] transition-all duration-300">
+          <router-link v-for="link in navLinks" :key="link.name" :to="link.path" class="text-sm font-black uppercase tracking-widest text-gray-500 dark:text-gray-400 hover:text-[#007BFE] dark:hover:text-[#1dbf73] transition-all duration-300">
             {{ link.name }}
-          </a>
+          </router-link>
         </nav>
 
         <div class="text-[10px] items-center flex flex-col gap-4">
