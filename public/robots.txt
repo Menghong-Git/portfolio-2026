@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap location
+Sitemap: https://penmenghong.hushstackcambodia.site/sitemap.xml
+
+# Crawl rate guidance
+Crawl-delay: 1

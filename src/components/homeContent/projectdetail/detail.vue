@@ -1,6 +1,8 @@
 <script setup lang="ts">
-import { computed, onMounted } from 'vue'
+import { computed, onMounted, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
+import { useProjectSEO } from '@/composables/useSEO'
+import { useProjectSchema } from '@/composables/useSchema'
 import { projects } from '@/data/projects'
 
 const route = useRoute()
@@ -32,6 +34,15 @@ const goToProject = (id: number) => {
   router.push(`/project/${id}`)
   window.scrollTo({ top: 0, behavior: 'smooth' })
 }
+
+// SEO setup
+const projectForSEO = computed(() => project.value)
+watch(projectForSEO, (newProject) => {
+  if (newProject) {
+    useProjectSEO(newProject)
+    useProjectSchema(newProject, relatedProjects.value)
+  }
+}, { immediate: true })
 
 onMounted(() => {
   window.scrollTo(0, 0)

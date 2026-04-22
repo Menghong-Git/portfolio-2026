@@ -1,13 +1,17 @@
 <script setup lang="ts">
-import ContactHome from '@/components/contactContent/contactHome.vue'
+import { useContactSEO } from '@/composables/useSEO'
+import { useContactSchema } from '@/composables/useSchema'
+import contactHome from '@/components/contactContent/contactHome.vue'
 import HomeFooter from '@/components/homeContent/homefooter.vue'
-import FAQSection from '@/components/projectContent/q&a.vue'
+
+// SEO and Schema
+useContactSEO()
+useContactSchema()
 </script>
 
 <template>
   <main class="w-full h-full bg-transparent">
-    <ContactHome />
-    <FAQSection />
+    <contactHome />
     <HomeFooter />
   </main>
 </template>
