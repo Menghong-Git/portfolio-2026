@@ -1,6 +1,8 @@
 <script setup lang="ts">
-import { computed, onMounted } from 'vue'
+import { computed, onMounted, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
+import { useProjectSEO } from '@/composables/useSEO'
+import { useProjectSchema } from '@/composables/useSchema'
 import { projects } from '@/data/projects'
 
 const route = useRoute()
@@ -32,6 +34,15 @@ const goToProject = (id: number) => {
   router.push(`/project/${id}`)
   window.scrollTo({ top: 0, behavior: 'smooth' })
 }
+
+// SEO setup
+const projectForSEO = computed(() => project.value)
+watch(projectForSEO, (newProject) => {
+  if (newProject) {
+    useProjectSEO(newProject)
+    useProjectSchema(newProject, relatedProjects.value)
+  }
+}, { immediate: true })
 
 onMounted(() => {
   window.scrollTo(0, 0)
@@ -331,17 +342,7 @@ onMounted(() => {
           </div>
 
           <!-- Newsletter Mini -->
-          <div class="bg-[#007BFE] dark:bg-[#1dbf73] p-10 rounded-3xl text-white dark:text-black">
-            <h3 class="text-2xl font-black uppercase mb-4 leading-none">Subscribe</h3>
-            <p class="text-white/80 dark:text-black/70 text-xs mb-8 font-medium">
-              Join 5,000+ others getting weekly tech insights.
-            </p>
-            <button
-              class="w-full py-4 bg-white dark:bg-black text-[#007BFE] dark:text-[#1dbf73] font-black uppercase tracking-widest text-xs rounded-xl shadow-xl hover:scale-105 transition-all"
-            >
-              Sign Up Now
-            </button>
-          </div>
+          
         </div>
       </div>
 

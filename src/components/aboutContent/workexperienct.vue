@@ -48,24 +48,14 @@
 <script setup lang="ts">
 const experiences = [
   {
-    title: 'Product Designer',
-    company: 'Cool Craft',
-    period: 'Nov 2024 - Now'
+    title: 'Web Developer',
+    company: 'Scholarar Education Start Up',
+    period: 'February 2025 - Present'
   },
   {
-    title: 'Design Specialist',
-    company: 'Amazing Pixel',
-    period: 'Nov 2022 - Nov 2024'
-  },
-  {
-    title: 'UX/UI Designer',
-    company: 'Design Studio',
-    period: 'Nov 2021 - Nov 2022'
-  },
-  {
-    title: 'Web Designer',
-    company: 'Freelancer',
-    period: 'Nov 2018 - Nov 2021'
+    title: 'FullStack Developer',
+    company: 'Freelance Team',
+    period: 'February 2025 - Present'
   }
 ]
 </script>

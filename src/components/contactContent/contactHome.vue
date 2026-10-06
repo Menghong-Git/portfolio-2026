@@ -35,11 +35,12 @@
             <div class="group p-10 bg-gray-50 dark:bg-[#111] rounded-[40px] border border-gray-100 dark:border-white/5 transition-all hover:translate-y-[-8px] hover:shadow-2xl">
               <p class="text-[10px] font-black uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-6 text-center">FIND ME</p>
               <div class="flex flex-wrap justify-center gap-4">
-                <a v-for="social in socials" :key="social.name" :href="social.link" class="w-10 h-10 rounded-full bg-[#1dbf73] text-black flex items-center justify-center transition-all hover:scale-110 hover:rotate-12 active:scale-95 shadow-lg shadow-[#1dbf73]/20">
+                <a v-for="social in socials" :key="social.name" :href="social.link" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-[#1dbf73] text-black flex items-center justify-center transition-all hover:scale-110 hover:rotate-12 active:scale-95 shadow-lg shadow-[#1dbf73]/20">
                    <svg v-if="social.icon === 'fb'" viewBox="0 0 24 24" class="w-5 h-5 fill-current"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-                   <svg v-if="social.icon === 'in'" viewBox="0 0 24 24" class="w-5 h-5 fill-current"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-                   <svg v-if="social.icon === 'tw'" viewBox="0 0 24 24" class="w-4 h-4 fill-current"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
                    <svg v-if="social.icon === 'ig'" viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                   <svg v-if="social.icon === 'in'" viewBox="0 0 24 24" class="w-5 h-5 fill-current"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                   <svg v-if="social.icon === 'gh'" viewBox="0 0 24 24" class="w-5 h-5 fill-current"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                   <svg v-if="social.icon === 'tg'" viewBox="0 0 24 24" class="w-5 h-5 fill-current"><path d="M21.73 2.11a2 2 0 0 0-2.18.48L2.35 18.88a1.5 1.5 0 0 0 .4 2.46l4.2 1.68a1 1 0 0 0 1.21-.31l4.5-5.6a.5.5 0 0 1 .7-.07l5.1 3.78a1 1 0 0 0 1.52-.5l2.57-12.5a2 2 0 0 0-.82-2.22zM9 18.2l-1.2 2.8a.2.2 0 0 1-.3.1l-2.4-1.5a.5.5 0 0 1-.2-.6l1.1-2.6 3 2.1z"/></svg>
                 </a>
               </div>
             </div>
@@ -105,10 +106,11 @@ const isSubmitting = ref(false)
 const isSuccess = ref(false)
 
 const socials = [
-  { name: 'Behance', icon: 'tw', link: '#' },
-  { name: 'Dribbble', icon: 'ig', link: '#' },
-  { name: 'Linkedin', icon: 'in', link: '#' },
-  { name: 'Instagram', icon: 'fb', link: '#' }
+  { name: 'Facebook', icon: 'fb', link: 'https://www.facebook.com/share/1EEeL9TCFs/' },
+  { name: 'Instagram', icon: 'ig', link: 'https://www.instagram.com/poki_copy?igsh=MWRwMGVuZzNlNzNzMA==' },
+  { name: 'Linkedin', icon: 'in', link: 'https://www.linkedin.com/in/pen-menghong-301b71341/' },
+  { name: 'Github', icon: 'gh', link: 'https://github.com/Menghong-Git' },
+  { name: 'Telegram', icon: 'tg', link: 'https://t.me/hongsart' }
 ]
 
 const sendToTelegram = async () => {

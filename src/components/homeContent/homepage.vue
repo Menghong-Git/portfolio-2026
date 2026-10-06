@@ -60,7 +60,7 @@ import { computed } from 'vue'
       <!-- Adaptive Details & CTA (Left Desktop, Center Mobile) -->
       <div class="relative z-30 w-full mt-auto sm:mt-0 flex flex-col items-center sm:items-start text-center sm:text-left gap-2 md:gap-5 sm:absolute sm:bottom-0 sm:left-0 lg:left-6 max-w-sm sm:max-w-md lg:max-w-lg pointer-events-auto">
         <p class="text-base sm:text-lg lg:text-xl text-gray-600 dark:text-gray-400 font-bold leading-relaxed drop-shadow-xl p-4 bg-white/5 backdrop-blur-md sm:bg-transparent rounded-3xl">
-          I blend artistry with cutting-edge technology to deliver websites that not only look stunning but also drive results.
+          Full Stack Developer skilled in React, Vue.js, and Next.js. I build responsive, high-performance web applications with clean code and modern best practices.
         </p>
         
         <!-- Premium Theme-Aware Button -->

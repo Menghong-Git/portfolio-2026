@@ -35,24 +35,22 @@
           </h2>
           
           <p class="text-gray-500 dark:text-gray-400 text-lg leading-relaxed mb-12 max-w-xl mx-auto lg:mx-0">
-            Hello! I'm Pen Menghong, a passionate Fullstack Developer with over a 5+ of experience in 
-            creating visually appealing and user-friendly websites. My mission is to bring your 
-            brand to life through innovative design solutions tailored to your unique needs.
+            Hello! I'm Pen Menghong, a passionate Full Stack Developer based in Phnom Penh, Cambodia. I specialize in modern frameworks such as React, Vue.js, and Next.js, with a strong focus on building responsive, high-performance, and user-centric web applications.
           </p>
 
           <!-- Social Media Icons (Consistent with provided design) -->
           <div class="flex justify-center lg:justify-start gap-4">
-            <a href="#" class="w-12 h-12 rounded-full bg-black dark:bg-white flex items-center justify-center text-white dark:text-black hover:bg-[#007BFE] dark:hover:bg-[#1dbf73] hover:text-white dark:hover:text-black transition-all transform hover:-translate-y-2">
+            <a href="https://www.linkedin.com/in/pen-menghong-301b71341/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-full bg-black dark:bg-white flex items-center justify-center text-white dark:text-black hover:bg-[#007BFE] dark:hover:bg-[#1dbf73] hover:text-white dark:hover:text-black transition-all transform hover:-translate-y-2">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
             </a>
-            <a href="#" class="w-12 h-12 rounded-full bg-black dark:bg-white flex items-center justify-center text-white dark:text-black hover:bg-[#007BFE] dark:hover:bg-[#1dbf73] hover:text-white dark:hover:text-black transition-all transform hover:-translate-y-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            <a href="https://github.com/Menghong-Git" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-full bg-black dark:bg-white flex items-center justify-center text-white dark:text-black hover:bg-[#007BFE] dark:hover:bg-[#1dbf73] hover:text-white dark:hover:text-black transition-all transform hover:-translate-y-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             </a>
-            <a href="#" class="w-12 h-12 rounded-full bg-black dark:bg-white flex items-center justify-center text-white dark:text-black hover:bg-[#007BFE] dark:hover:bg-[#1dbf73] hover:text-white dark:hover:text-black transition-all transform hover:-translate-y-2">
+            <a href="https://www.instagram.com/poki_copy?igsh=MWRwMGVuZzNlNzNzMA==" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-full bg-black dark:bg-white flex items-center justify-center text-white dark:text-black hover:bg-[#007BFE] dark:hover:bg-[#1dbf73] hover:text-white dark:hover:text-black transition-all transform hover:-translate-y-2">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
             </a>
-             <a href="#" class="w-12 h-12 rounded-full bg-black dark:bg-white flex items-center justify-center text-white dark:text-black hover:bg-[#007BFE] dark:hover:bg-[#1dbf73] hover:text-white dark:hover:text-black transition-all transform hover:-translate-y-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+             <a href="https://www.facebook.com/share/1EEeL9TCFs/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-full bg-black dark:bg-white flex items-center justify-center text-white dark:text-black hover:bg-[#007BFE] dark:hover:bg-[#1dbf73] hover:text-white dark:hover:text-black transition-all transform hover:-translate-y-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
             </a>
           </div>
         </div>
@@ -67,23 +65,23 @@
           
           <!-- Stat 1 -->
           <div class="text-white dark:text-black border-b md:border-b-0 md:border-r border-white/20 dark:border-black/20 pb-8 md:pb-0">
-             <div class="text-6xl font-black mb-4 tracking-tighter underline decoration-4 decoration-white/30 underline-offset-8">01</div>
+             <div class="text-6xl font-black mb-4 tracking-tighter underline decoration-4 decoration-white/30 underline-offset-8">1+</div>
              <p class="text-lg font-black uppercase tracking-widest leading-tight">Years of <br/>Experience</p>
-             <p class="text-xs text-white/70 dark:text-black/60 mt-2 font-bold">Decades of experience in delivering exceptional projects.</p>
+             <p class="text-xs text-white/70 dark:text-black/60 mt-2 font-bold">Building real-world projects since 2024.</p>
           </div>
 
           <!-- Stat 2 -->
           <div class="text-white dark:text-black border-b md:border-b-0 md:border-r border-white/20 dark:border-black/20 pb-8 md:pb-0">
              <div class="text-6xl font-black mb-4 tracking-tighter underline decoration-4 decoration-white/30 underline-offset-8">15+</div>
              <p class="text-lg font-black uppercase tracking-widest leading-tight">Projects <br/>Delivered</p>
-             <p class="text-xs text-white/70 dark:text-black/60 mt-2 font-bold">Successfully launched high-scale web applications.</p>
+             <p class="text-xs text-white/70 dark:text-black/60 mt-2 font-bold">Successfully launched web applications and dashboards.</p>
           </div>
 
           <!-- Stat 3 -->
           <div class="text-white dark:text-black">
-             <div class="text-6xl font-black mb-4 tracking-tighter underline decoration-4 decoration-white/30 underline-offset-8">98%</div>
-             <p class="text-lg font-black uppercase tracking-widest leading-tight">Client <br/>Satisfaction</p>
-             <p class="text-xs text-white/70 dark:text-black/60 mt-2 font-bold">Building long-term partnerships through proven results.</p>
+             <div class="text-6xl font-black mb-4 tracking-tighter underline decoration-4 decoration-white/30 underline-offset-8">3</div>
+             <p class="text-lg font-black uppercase tracking-widest leading-tight">Certifications <br/>Earned</p>
+             <p class="text-xs text-white/70 dark:text-black/60 mt-2 font-bold">Computer Skills, Full-Stack Development, and more.</p>
           </div>
 
         </div>

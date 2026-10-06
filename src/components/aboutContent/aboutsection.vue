@@ -32,15 +32,10 @@
           
           <div class="space-y-6 text-gray-500 dark:text-gray-400 text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
              <p>
-                My journey into the world of design began during my college years, where I was 
-                captivated by the intersection of creativity and technology. Inspired by the 
-                power of visual storytelling, I pursued a degree in Computer Science and 
-                honed my skills in various modern web technologies.
+                Frontend Web Developer skilled in modern frameworks such as React, with a strong focus on building responsive, high-performance, and user-centric web applications. Experienced in translating UI/UX designs into clean, efficient, and maintainable code while ensuring cross-browser compatibility and accessibility standards.
              </p>
              <p>
-                Today, I am driven by the belief that great design is not just about aesthetics; 
-                it’s about creating meaningful connections between brands and their audiences 
-                through powerful, functional web applications.
+                Demonstrates a solid understanding of web development best practices, including component-based architecture, version control, and performance optimization. Committed to delivering intuitive digital experiences through attention to detail and continuous improvement of technical expertise.
              </p>
           </div>
           <!-- Download Resume Button (Matching provided design) -->

@@ -62,10 +62,10 @@ const principles = [
 ]
 
 const awards = [
-  { title: 'Awwwards', category: 'Site of the day' },
-  { title: 'CSS Design Award', category: 'CSS Ninja' },
-  { title: 'CSS Design Award', category: 'CSS Champion' },
-  { title: 'Awwwards', category: 'Site of the day' }
+  { title: 'Full-Stack Development Certificate', category: 'Qwasar Silicon Valley' },
+  { title: 'Computer Skills Certificate', category: 'Microsoft Office (2023)' },
+  { title: 'Certificate of Appreciation', category: 'IP & TechPreneur Award (2025)' },
+  { title: 'DICHI ACADEMY', category: 'FullStack Developer Program (2024-2025)' }
 ]
 </script>
 
